@@ -15,8 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-
-codes = open('admin_codes.txt','r')
+codes = open(os.path.join(os.path.join(BASE_DIR,'admin_codes'),'admin_codes.txt'),'r')
 codes_content = codes.read()
 codes_content_list = codes_content.split('\n')
 codes_content_dict = {}
