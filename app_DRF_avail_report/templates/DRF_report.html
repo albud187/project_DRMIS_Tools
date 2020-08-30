@@ -1,0 +1,14 @@
+{% extends 'tools_MM.html' %}
+
+{% block tool_block %}
+  <h2>Upload</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>VOR Tactical Disposition <input type="file" name="vor_tac"></p>
+    <p>IE36 <input type="file" name="ie36_input"></p>
+    <p>ZEIW29 <input type="file" name="zeiw29_input"></p>
+    <p>Email<input type="email" name="user_recipient"></p>
+
+    <p><button type="submit">Generate Report</button></p>
+  </form>
+{% endblock %}

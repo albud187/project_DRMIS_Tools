@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+
+<div class="row">
+
+  <div class="col-2">
+    <div class="list-group" >
+      <a class="list-group-item list-group-item-action" id="" data-toggle="list" href="" role="tab" aria-controls="profile">placeholder1</a>
+      <a class="list-group-item list-group-item-action" id="" data-toggle="list" href="" role="tab" aria-controls="profile">placeholder2</a>
+
+    </div>
+  </div>
+
+
+    <div class="col-8">
+
+      <div class="jumbotron">
+{% block tool_block %}
+
+      <h1 class="display-4"><strong>DRMIS FI Tools overview</strong></h1>
+      <br>
+      <p>Note: Each input must be entered <strong>exactly</strong> as described or the calculation will not work</p>
+
+      <br>
+      <p><strong>stuff: </strong>does stuff</p>
+      <p><strong>more stuff: </strong>more stuff</p>
+
+
+{% endblock %}
+</div><!-- /.jumbotron -->
+
+{% endblock %}

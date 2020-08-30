@@ -1,0 +1,14 @@
+{% extends 'tools_MM.html' %}
+
+{% block tool_block %}
+  <h2>Upload</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>document 1 <input type="file" name="document1"></p>
+    <!-- <p>document 2 <input type="file" name="document2"></p>
+    <p>document 3 <input type="file" name="document3"></p> -->
+    <p>Email<input type="email" name="user_recipient"></p>
+
+    <p><button type="submit">Generate Report</button></p>
+  </form>
+{% endblock %}

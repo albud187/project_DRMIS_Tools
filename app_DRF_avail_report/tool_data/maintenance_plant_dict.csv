@@ -1,0 +1,11 @@
+maintenance_plant_key, maintenance_plant_text
+2, "CA"
+1000, "ADM (Mat)"
+1100, "RCN"
+2000, "RCAF"
+3100, "CANSOFCOM"
+3200, "CJOC"
+3300, "DRDC"
+3600, "MPC"
+3700, "VCDS"
+3800, "ADM (IM)"
