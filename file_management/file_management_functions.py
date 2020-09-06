@@ -1,23 +1,15 @@
-from django.shortcuts import render, redirect
-from django.views.generic import TemplateView, ListView, CreateView
+
 from django.core.files.storage import FileSystemStorage
-from django.urls import reverse_lazy
+
 
 from django.core.mail import send_mail
 from django.core.mail import EmailMessage
 from django.core import mail
 
-from datetime import datetime
-import pandas as pd
-import numpy as np
-
 import os
 import shutil
-# from file_management.file_management_functions import create_folder, file_input, send_results
+# from file_management.file_management_functions import create_folder, file_input, send_results, delete_inputs
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-INPUT_DIR = os.path.join(BASE_DIR,'files_input')
-OUTPUT_DIR =os.path.join(BASE_DIR,'files_output')
 
 def file_input(request,htmlInput,file_folder):
     uploaded_file = request.FILES[htmlInput]
