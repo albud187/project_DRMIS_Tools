@@ -23,6 +23,8 @@ def create_folder(target_dir, function_name):
     folder_name = str(fileCount)+'_'+function_name
     return(folder_name)
 
+# function name is a string that will be added on email
+# output_path is the path of the file to be attached
 def send_results(function_name,request,output_path):
 
     ## send email
